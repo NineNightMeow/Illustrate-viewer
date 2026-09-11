@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-clear-custom-background"
+description = "Enables the clear_custom_background command without any pre-configured scope."
+commands.allow = ["clear_custom_background"]
+
+[[permission]]
+identifier = "deny-clear-custom-background"
+description = "Denies the clear_custom_background command without any pre-configured scope."
+commands.deny = ["clear_custom_background"]

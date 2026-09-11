@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-release-gallery-thumbnail-window"
+description = "Enables the release_gallery_thumbnail_window command without any pre-configured scope."
+commands.allow = ["release_gallery_thumbnail_window"]
+
+[[permission]]
+identifier = "deny-release-gallery-thumbnail-window"
+description = "Denies the release_gallery_thumbnail_window command without any pre-configured scope."
+commands.deny = ["release_gallery_thumbnail_window"]

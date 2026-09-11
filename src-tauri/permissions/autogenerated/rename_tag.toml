@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-rename-tag"
+description = "Enables the rename_tag command without any pre-configured scope."
+commands.allow = ["rename_tag"]
+
+[[permission]]
+identifier = "deny-rename-tag"
+description = "Denies the rename_tag command without any pre-configured scope."
+commands.deny = ["rename_tag"]

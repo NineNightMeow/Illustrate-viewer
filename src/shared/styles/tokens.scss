@@ -1,0 +1,207 @@
+:root {
+  --iv-bg-primary: #0E0F12;
+  --iv-bg-secondary: #141519;
+  --iv-surface: #181A20;
+  --iv-surface-hover-base: #20232A;
+  --iv-surface-hover: color-mix(in srgb, var(--iv-accent) 8%, var(--iv-surface-hover-base));
+  --iv-border-subtle: #2B2E36;
+  --iv-text-primary: #EBEDF2;
+  --iv-text-secondary: #9299A8;
+  --iv-accent-default: #6B87F2;
+  --iv-accent: var(--iv-accent-default);
+  --iv-accent-hover: color-mix(in srgb, var(--iv-accent) 82%, white);
+  --iv-accent-soft: color-mix(in srgb, var(--iv-accent) 18%, transparent);
+  --iv-interactive-selected: var(--iv-accent-soft);
+  --iv-preview-surface: var(--iv-bg-secondary);
+  --iv-image-surface: #17191D;
+  --iv-image-surface-light: #F5F5F3;
+  // Opaque image mattes stay independent from wallpaper, glass, and app chrome.
+  --iv-thumbnail-matte-surface: #1B1E23;
+  --iv-viewer-matte-surface: #181B20;
+  --iv-viewer-matte-surface-light: #E4E7EB;
+  --iv-viewer-matte-auto-surface: var(--iv-viewer-matte-surface);
+  --iv-overlay-surface: rgb(20 23 29 / 72%);
+  --iv-overlay-surface-hover: rgb(35 39 48 / 88%);
+  --iv-overlay-surface-strong: rgb(20 23 29 / 94%);
+  --iv-overlay-surface-hud: rgb(20 23 29 / 80%);
+  --iv-overlay-border: rgb(255 255 255 / 12%);
+  --iv-overlay-text-primary: #EBEDF2;
+  --iv-overlay-text-secondary: #A9B0BD;
+  --iv-overlay-text-tertiary: #7F8794;
+  --iv-overlay-text-status: #D6DAE3;
+  --iv-overlay-accent-active: color-mix(in srgb, var(--iv-accent) 62%, var(--iv-image-surface));
+  --iv-preview-scrim: rgb(8 10 14 / 78%);
+
+  // Appearance foundation: all defaults intentionally resolve to the M7 palette.
+  --iv-app-background: var(--iv-bg-primary);
+  --iv-app-background-overlay: var(--iv-scrim);
+  --iv-surface-opacity: 1;
+  --iv-surface-blur: 0px;
+  --iv-glass-surface: var(--iv-surface);
+  --iv-glass-bg: var(--iv-surface);
+  --iv-glass-bg-strong: var(--iv-surface);
+  --iv-glass-border: var(--iv-border-subtle);
+  --iv-glass-highlight: var(--iv-surface-hover);
+  --iv-glass-blur: 0px;
+  --iv-glass-saturation: 100%;
+  --iv-glass-shadow: none;
+  --iv-glass-surface-alpha: 88%;
+  --iv-glass-strong-alpha: 95%;
+  --iv-glass-border-alpha: 78%;
+  --iv-glass-highlight-alpha: 8%;
+  --iv-background-image-opacity: 0;
+  --iv-background-image-blur: 0px;
+  --iv-background-image-dim: 0;
+  --iv-background-image-fit: cover;
+  --iv-background-image-dim-color: #000000;
+
+  // Surface classes keep future appearance effects out of image-critical pixels.
+  --iv-chrome-surface: var(--iv-bg-primary);
+  --iv-chrome-sidebar-surface: var(--iv-bg-secondary);
+  --iv-content-surface: var(--iv-bg-primary);
+  --iv-content-panel-surface: var(--iv-surface);
+  --iv-floating-surface: var(--iv-surface);
+  --iv-floating-border: var(--iv-border-subtle);
+  --iv-image-critical-surface: var(--iv-image-surface);
+  --iv-image-critical-surface-light: var(--iv-image-surface-light);
+  --iv-danger: #D96A6A;
+  --iv-danger-hover: #C42B1C;
+  --iv-danger-soft: #472226;
+  --iv-text-disabled: #626879;
+  --iv-scrim: rgba(0, 0, 0, 0.56);
+  --iv-shadow-floating: 0 16px 40px rgba(0, 0, 0, 0.32);
+  --iv-placeholder-line: color-mix(in srgb, var(--iv-text-primary) 9%, transparent);
+  --iv-placeholder-line-strong: color-mix(in srgb, var(--iv-text-primary) 15%, transparent);
+  --iv-placeholder-surface: color-mix(in srgb, var(--iv-surface-hover) 72%, var(--iv-bg-primary));
+  --iv-scrollbar-track: transparent;
+  --iv-scrollbar-thumb: color-mix(in srgb, var(--iv-text-secondary) 42%, transparent);
+  --iv-scrollbar-thumb-hover: color-mix(in srgb, var(--iv-accent) 58%, var(--iv-text-secondary));
+
+  --iv-accent-option-blue: #6B87F2;
+  --iv-accent-option-purple: #8B68D9;
+  --iv-accent-option-rose: #D35D91;
+  --iv-accent-option-orange: #D9823A;
+  --iv-accent-option-yellow: #D8A928;
+  --iv-accent-option-green: #50A66C;
+  --iv-accent-option-cyan: #42A7B8;
+
+  --iv-font-family: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+  --iv-font-weight-regular: 400;
+  --iv-font-weight-medium: 500;
+  --iv-font-weight-semibold: 600;
+
+  --iv-font-size-12: 12px;
+  --iv-font-size-13: 13px;
+  --iv-font-size-14: 14px;
+  --iv-font-size-15: 15px;
+  --iv-font-size-16: 16px;
+  --iv-font-size-20: 20px;
+  --iv-font-size-24: 24px;
+
+  --iv-line-height-16: 16px;
+  --iv-line-height-18: 18px;
+  --iv-line-height-20: 20px;
+  --iv-line-height-22: 22px;
+  --iv-line-height-28: 28px;
+  --iv-line-height-32: 32px;
+
+  --iv-space-1: 4px;
+  --iv-space-2: 8px;
+  --iv-space-3: 12px;
+  --iv-space-4: 16px;
+  --iv-space-5: 20px;
+  --iv-space-6: 24px;
+  --iv-space-8: 32px;
+  --iv-space-10: 40px;
+  --iv-space-12: 48px;
+
+  --iv-radius-xs: 4px;
+  --iv-radius-sm: 6px;
+  --iv-radius-md: 10px;
+  --iv-radius-lg: 12px;
+  --iv-radius-xl: 16px;
+  --iv-radius-round: 999px;
+
+  --iv-titlebar-height: 42px;
+  --iv-topbar-height: 52px;
+  --iv-sidebar-expanded-width: 208px;
+  --iv-sidebar-collapsed-width: 52px;
+  --iv-settings-nav-width: 176px;
+  --iv-details-panel-width: 336px;
+  --iv-control-height: 36px;
+  --iv-control-small-height: 32px;
+  --iv-control-inset: 2px;
+  --iv-settings-row-height: 48px;
+  --iv-settings-description-row-height: 64px;
+  --iv-gallery-padding: 16px;
+  --iv-content-padding: 24px;
+  --iv-content-max-width: 1600px;
+  --iv-settings-control-width: 248px;
+  --iv-settings-range-width: 240px;
+  --iv-settings-range-narrow-width: 160px;
+  --iv-home-reference-preview-width: 196px;
+  --iv-home-reference-preview-narrow-width: 128px;
+  --iv-home-reference-preview-height: 68px;
+  --iv-home-recent-preview-width: 128px;
+  --iv-home-recent-preview-height: 112px;
+  --iv-menu-item-height: 32px;
+  --iv-floating-padding: 8px;
+  --iv-toggle-width: 40px;
+  --iv-toggle-height: 24px;
+  --iv-toggle-thumb-size: 18px;
+  --iv-toggle-thumb-travel: 16px;
+  --iv-segmented-option-min-width: 72px;
+  --iv-segmented-option-height: 30px;
+  --iv-focus-ring-width: 2px;
+  --iv-tooltip-max-width: 240px;
+  --iv-popover-max-width: 320px;
+  --iv-dialog-width: 480px;
+  --iv-context-menu-width: 200px;
+
+  --iv-layer-content: 0;
+  --iv-layer-shell: 10;
+  --iv-layer-tooltip: 100;
+  --iv-layer-popover: 200;
+  --iv-layer-dialog: 300;
+  --iv-layer-critical: 400;
+}
+
+:root[data-theme="light"] {
+  --iv-bg-primary: #F5F6F8;
+  --iv-bg-secondary: #ECEEF2;
+  --iv-surface: #FFFFFF;
+  --iv-surface-hover-base: #F0F2F5;
+  --iv-border-subtle: #D7DAE1;
+  --iv-text-primary: #1B1F29;
+  --iv-text-secondary: #596273;
+  --iv-danger: #B84E4E;
+  --iv-danger-hover: #A83E35;
+  --iv-danger-soft: #F4DADA;
+  --iv-text-disabled: #A1A8B5;
+  --iv-scrim: rgba(0, 0, 0, 0.32);
+  --iv-shadow-floating: 0 16px 40px rgba(26, 31, 43, 0.18);
+  --iv-background-image-dim-color: #FFFFFF;
+  --iv-thumbnail-matte-surface: #ECEEF1;
+  --iv-viewer-matte-auto-surface: var(--iv-viewer-matte-surface-light);
+}
+
+@media (prefers-color-scheme: light) {
+  :root[data-theme="system"] {
+    --iv-bg-primary: #F5F6F8;
+    --iv-bg-secondary: #ECEEF2;
+    --iv-surface: #FFFFFF;
+    --iv-surface-hover-base: #F0F2F5;
+    --iv-border-subtle: #D7DAE1;
+    --iv-text-primary: #1B1F29;
+    --iv-text-secondary: #596273;
+    --iv-danger: #B84E4E;
+    --iv-danger-hover: #A83E35;
+    --iv-danger-soft: #F4DADA;
+    --iv-text-disabled: #A1A8B5;
+    --iv-scrim: rgba(0, 0, 0, 0.32);
+    --iv-shadow-floating: 0 16px 40px rgba(26, 31, 43, 0.18);
+    --iv-background-image-dim-color: #FFFFFF;
+    --iv-thumbnail-matte-surface: #ECEEF1;
+    --iv-viewer-matte-auto-surface: var(--iv-viewer-matte-surface-light);
+  }
+}

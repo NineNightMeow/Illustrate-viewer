@@ -1,0 +1,76 @@
+@use "./tokens";
+@use "./reset";
+@use "./typography";
+@use "./motion";
+
+.iv-glass-surface {
+  background-color: var(--iv-glass-bg);
+  border-color: var(--iv-glass-border);
+  box-shadow: var(--iv-glass-shadow);
+  transition: background-color var(--iv-motion-normal) ease, border-color var(--iv-motion-normal) ease,
+    opacity var(--iv-motion-normal) ease;
+}
+
+:root[data-liquid-glass="true"] .iv-glass-surface {
+  background-color: var(--iv-glass-bg);
+  border-color: var(--iv-glass-border);
+  box-shadow: var(--iv-glass-shadow), inset 0 1px 0 var(--iv-glass-highlight);
+}
+
+:root[data-liquid-glass="true"] {
+  --iv-glass-bg: color-mix(in srgb, var(--iv-surface) var(--iv-glass-surface-alpha), transparent);
+  --iv-glass-bg-strong: color-mix(in srgb, var(--iv-surface) var(--iv-glass-strong-alpha), transparent);
+  --iv-glass-border: color-mix(in srgb, var(--iv-border-subtle) var(--iv-glass-border-alpha), var(--iv-text-primary));
+  --iv-glass-highlight: color-mix(in srgb, var(--iv-text-primary) var(--iv-glass-highlight-alpha), transparent);
+  --iv-glass-shadow: 0 8px 24px rgb(0 0 0 / 14%);
+  --iv-overlay-surface: var(--iv-glass-bg);
+  --iv-overlay-surface-strong: var(--iv-glass-bg-strong);
+  --iv-overlay-surface-hud: var(--iv-glass-bg-strong);
+  --iv-overlay-border: var(--iv-glass-border);
+}
+
+// Light glass needs dark overlay text; dark glass keeps the existing light overlay palette.
+:root[data-theme="light"][data-liquid-glass="true"] {
+  --iv-overlay-text-primary: var(--iv-text-primary);
+  --iv-overlay-text-secondary: var(--iv-text-secondary);
+  --iv-overlay-text-tertiary: color-mix(in srgb, var(--iv-text-secondary) 78%, var(--iv-surface));
+  --iv-overlay-text-status: var(--iv-text-primary);
+  --iv-overlay-accent-active: color-mix(in srgb, var(--iv-accent) 18%, var(--iv-surface));
+}
+
+@media (prefers-color-scheme: light) {
+  :root[data-theme="system"][data-liquid-glass="true"] {
+    --iv-overlay-text-primary: var(--iv-text-primary);
+    --iv-overlay-text-secondary: var(--iv-text-secondary);
+    --iv-overlay-text-tertiary: color-mix(in srgb, var(--iv-text-secondary) 78%, var(--iv-surface));
+    --iv-overlay-text-status: var(--iv-text-primary);
+    --iv-overlay-accent-active: color-mix(in srgb, var(--iv-accent) 18%, var(--iv-surface));
+  }
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  :root[data-liquid-glass="true"] .iv-glass-surface {
+    -webkit-backdrop-filter: blur(var(--iv-glass-blur)) saturate(var(--iv-glass-saturation));
+    backdrop-filter: blur(var(--iv-glass-blur)) saturate(var(--iv-glass-saturation));
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  :root[data-liquid-glass="true"] {
+    --iv-glass-bg: var(--iv-surface);
+    --iv-glass-bg-strong: var(--iv-surface);
+    --iv-glass-blur: 0px;
+    --iv-glass-saturation: 100%;
+    --iv-glass-shadow: none;
+  }
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  :root[data-liquid-glass="true"] {
+    --iv-glass-bg: var(--iv-surface);
+    --iv-glass-bg-strong: var(--iv-surface);
+    --iv-glass-blur: 0px;
+    --iv-glass-saturation: 100%;
+    --iv-glass-shadow: none;
+  }
+}

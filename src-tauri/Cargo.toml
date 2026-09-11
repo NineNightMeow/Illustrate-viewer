@@ -1,0 +1,32 @@
+[package]
+name = "illustrate-viewer"
+version = "0.1.0"
+description = "Illustrate Viewer desktop application"
+authors = ["NineNightMeow", "HSP-hapy"]
+license = "MIT"
+repository = "https://github.com/NineNightMeow/Illustrate-viewer"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "illustrate_viewer_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+image = { version = "0.25", default-features = false, features = ["gif", "jpeg", "png", "webp"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+tauri = { version = "2", features = ["protocol-asset"] }
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-store = "2"
+uuid = { version = "1", features = ["v4", "v5"] }

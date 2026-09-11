@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-get-image-fingerprint"
+description = "Enables the get_image_fingerprint command without any pre-configured scope."
+commands.allow = ["get_image_fingerprint"]
+
+[[permission]]
+identifier = "deny-get-image-fingerprint"
+description = "Denies the get_image_fingerprint command without any pre-configured scope."
+commands.deny = ["get_image_fingerprint"]

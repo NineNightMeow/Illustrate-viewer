@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-add-image-to-collection"
+description = "Enables the add_image_to_collection command without any pre-configured scope."
+commands.allow = ["add_image_to_collection"]
+
+[[permission]]
+identifier = "deny-add-image-to-collection"
+description = "Denies the add_image_to_collection command without any pre-configured scope."
+commands.deny = ["add_image_to_collection"]

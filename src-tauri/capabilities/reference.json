@@ -1,0 +1,15 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "reference-window",
+  "description": "Minimal capability for independently displaying one prepared reference image.",
+  "windows": ["reference-*"],
+  "permissions": [
+    "core:window:allow-close",
+    "core:window:allow-start-dragging",
+    "core:window:allow-is-always-on-top",
+    "core:window:allow-set-always-on-top",
+    "core:window:allow-set-resizable",
+    "allow-get-reference-asset",
+    "allow-update-reference-state"
+  ]
+}

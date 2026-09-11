@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-enqueue-metadata-tasks"
+description = "Enables the enqueue_metadata_tasks command without any pre-configured scope."
+commands.allow = ["enqueue_metadata_tasks"]
+
+[[permission]]
+identifier = "deny-enqueue-metadata-tasks"
+description = "Denies the enqueue_metadata_tasks command without any pre-configured scope."
+commands.deny = ["enqueue_metadata_tasks"]

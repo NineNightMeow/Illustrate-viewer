@@ -1,0 +1,16 @@
+:root {
+  --iv-motion-fast: 100ms;
+  --iv-motion-normal: 150ms;
+  --iv-motion-slow: 220ms;
+  --iv-tooltip-delay: 500ms;
+  --iv-press-scale: 0.96;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --iv-motion-fast: 0ms;
+    --iv-motion-normal: 0ms;
+    --iv-motion-slow: 0ms;
+    --iv-press-scale: 1;
+  }
+}

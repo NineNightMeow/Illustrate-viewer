@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-list-smart-collection-images"
+description = "Enables the list_smart_collection_images command without any pre-configured scope."
+commands.allow = ["list_smart_collection_images"]
+
+[[permission]]
+identifier = "deny-list-smart-collection-images"
+description = "Denies the list_smart_collection_images command without any pre-configured scope."
+commands.deny = ["list_smart_collection_images"]

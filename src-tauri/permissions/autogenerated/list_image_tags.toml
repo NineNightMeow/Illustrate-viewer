@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-list-image-tags"
+description = "Enables the list_image_tags command without any pre-configured scope."
+commands.allow = ["list_image_tags"]
+
+[[permission]]
+identifier = "deny-list-image-tags"
+description = "Denies the list_image_tags command without any pre-configured scope."
+commands.deny = ["list_image_tags"]

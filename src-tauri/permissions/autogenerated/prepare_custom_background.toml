@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-prepare-custom-background"
+description = "Enables the prepare_custom_background command without any pre-configured scope."
+commands.allow = ["prepare_custom_background"]
+
+[[permission]]
+identifier = "deny-prepare-custom-background"
+description = "Denies the prepare_custom_background command without any pre-configured scope."
+commands.deny = ["prepare_custom_background"]

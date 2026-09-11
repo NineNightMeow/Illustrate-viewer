@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-get-metadata-database-status"
+description = "Enables the get_metadata_database_status command without any pre-configured scope."
+commands.allow = ["get_metadata_database_status"]
+
+[[permission]]
+identifier = "deny-get-metadata-database-status"
+description = "Denies the get_metadata_database_status command without any pre-configured scope."
+commands.deny = ["get_metadata_database_status"]

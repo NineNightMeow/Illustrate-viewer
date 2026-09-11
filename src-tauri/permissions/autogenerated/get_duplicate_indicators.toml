@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-get-duplicate-indicators"
+description = "Enables the get_duplicate_indicators command without any pre-configured scope."
+commands.allow = ["get_duplicate_indicators"]
+
+[[permission]]
+identifier = "deny-get-duplicate-indicators"
+description = "Denies the get_duplicate_indicators command without any pre-configured scope."
+commands.deny = ["get_duplicate_indicators"]
