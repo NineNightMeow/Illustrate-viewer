@@ -18,7 +18,7 @@
   </p>
 
 <p align="center">
-    <a href="https://github.com/NinedNightMeow/Illustrate-viewer/blob/main/README.md" target="blank"><strong>🇨🇳 简体中文</strong></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="https://github.com/NineNightMeow/Illustrate-viewer/blob/main/README.md" target="blank"><strong>🇨🇳 简体中文</strong></a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="https://github.com/NineNightMeow/Illustrate-viewer/blob/main/docs/README_jp.md" target="blank"><strong>🇯🇵 日本語</strong></a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="https://github.com/NineNightMeow/Illustrate-viewer/blob/main/docs/README_en.md" target="blank"><strong>🇺🇸 English</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;
     <br />
