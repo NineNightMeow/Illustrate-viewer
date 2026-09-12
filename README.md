@@ -26,7 +26,7 @@
   </p>
 </p>
 
-![images](https://github.com/NineNightMeow/Illustrate-viewer/raw/main/images/image.png)
+![images](https://github.com/NineNightMeow/Illustrate-viewer/main/images/image.png)
 ---
 
  早在初中刚开始那会的样子，咱就开始收集各种插画.从一开始的几十张几百张，随着时间增长到了几千的量级.与此同时，种类也开始逐渐繁多，不同画风，不同画师，以及默认保存模糊的文件名等(这个时候想要手动分类一个个打开和一个个改就已经来不及了x)
