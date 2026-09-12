@@ -26,7 +26,7 @@
   </p>
 </p>
 
-![images](https://github.com/NineNightMeow/Illustrate-viewer/main/images/image.png)
+![images](https://github.com/NineNightMeow/Illustrate-viewer/raw/main/images/image.png)
 
 ---
 
