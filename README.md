@@ -11,7 +11,7 @@
   </p>
 
   <p align="center">
-    一款开源轻量现代的插画管理兼视图器。
+    一款开源轻量现代的插画管理兼视图器。 
     <br />
     <a href="https://github.com/NineNightMeow/Illustrate-viewer/" target="blank"><strong>🌎 GitHub仓库</strong></a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="https://github.com/NineNightMeow/Illustrate-viewer/releases" target="blank"><strong>📦️ 下载安装</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;
