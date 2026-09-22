@@ -23,7 +23,7 @@
     <a href="https://github.com/NineNightMeow/Illustrate-viewer/blob/main/docs/README_en.md" target="blank"><strong>🇺🇸 English</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;
     <br />
   </p>
-</p>
+</p> 
 
 ![images](https://github.com/NineNightMeow/Illustrate-viewer/raw/main/image.png)
 
